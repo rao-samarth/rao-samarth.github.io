@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Load publications from JSON file
 function loadPublications() {
-  fetch('publications.json')
+  fetch('projects.json')
     .then(response => {
       if (!response.ok) {
         throw new Error(`Network response was not ok: ${response.status}`);
@@ -79,15 +79,15 @@ function createPublicationElement(publication) {
   const pubItem = document.createElement('div');
   pubItem.className = 'publication-item';
   
-  // Create thumbnail
-  const thumbnail = document.createElement('div');
-  thumbnail.className = 'pub-thumbnail';
-  thumbnail.onclick = () => openModal(publication.thumbnail);
-  
-  const thumbnailImg = document.createElement('img');
-  thumbnailImg.src = publication.thumbnail;
-  thumbnailImg.alt = `${publication.title} thumbnail`;
-  thumbnail.appendChild(thumbnailImg);
+  // Create thumbnail (commented out)
+  // const thumbnail = document.createElement('div');
+  // thumbnail.className = 'pub-thumbnail';
+  // thumbnail.onclick = () => openModal(publication.thumbnail);
+  // 
+  // const thumbnailImg = document.createElement('img');
+  // thumbnailImg.src = publication.thumbnail;
+  // thumbnailImg.alt = `${publication.title} thumbnail`;
+  // thumbnail.appendChild(thumbnailImg);
   
   // Create content container
   const content = document.createElement('div');
@@ -148,6 +148,8 @@ function createPublicationElement(publication) {
       const pdfLink = document.createElement('a');
       pdfLink.href = publication.links.pdf;
       pdfLink.textContent = '[PDF]';
+      pdfLink.target = '_blank';
+      pdfLink.rel = 'noopener noreferrer';
       links.appendChild(pdfLink);
     }
     
@@ -155,6 +157,8 @@ function createPublicationElement(publication) {
       const codeLink = document.createElement('a');
       codeLink.href = publication.links.code;
       codeLink.textContent = '[Code]';
+      codeLink.target = '_blank';
+      codeLink.rel = 'noopener noreferrer';
       links.appendChild(codeLink);
     }
     
@@ -162,6 +166,8 @@ function createPublicationElement(publication) {
       const projectLink = document.createElement('a');
       projectLink.href = publication.links.project;
       projectLink.textContent = '[Project Page]';
+      projectLink.target = '_blank';
+      projectLink.rel = 'noopener noreferrer';
       links.appendChild(projectLink);
     }
     
@@ -169,7 +175,7 @@ function createPublicationElement(publication) {
   }
   
   // Assemble the publication item
-  pubItem.appendChild(thumbnail);
+  // pubItem.appendChild(thumbnail); // Thumbnail removed
   pubItem.appendChild(content);
   
   return pubItem;

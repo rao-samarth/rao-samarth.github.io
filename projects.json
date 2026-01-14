@@ -1,0 +1,82 @@
+{
+  "publications": [
+    {
+      "title": "Agentic Edge Orchestration",
+      "authors": [
+        "We propose a method of distributing inference of an AI model in an edge cluster. Our approach uses reinforcement learning to optimise for low end-to-end latency and also accounts for real time network conditions."
+      ],
+      "venue": "",
+      "thumbnail": "images/thumbs/edge.png",
+      "selected": 1,
+      "award": "",
+      "links": {
+      }
+    },
+    {
+      "title": "Memetic Knapsack",
+      "authors": [
+        "We propose a new memetic algorithm to the 0/1-Knapsack Problem."
+      ],
+      "venue": "",
+      "thumbnail": "images/thumbs/knapsack.png",
+      "selected": 1,
+      "award": "",
+      "links": {
+        "pdf": "https://github.com/rao-samarth/knapsack/blob/main/report-presentation/report.pdf",
+        "code": "https://github.com/rao-samarth/knapsack/"
+      }
+    },
+    {
+      "title": "Collab-Doc",
+      "authors": [
+        "Implementation of a simplified shared document system, with support for concurrency and access control, implemented in C."
+      ],
+      "venue": "",
+      "thumbnail": "images/thumbs/collab-doc.png",
+      "selected": 1,
+      "award": "",
+      "links": {
+        "code": "https://github.com/rao-samarth/collab-doc"
+      }
+    },
+    {
+      "title": "MyShell",
+      "authors": [
+        "A custom shell, implemented in C."
+      ],
+      "venue": "",
+      "thumbnail": "images/thumbs/2.jpg",
+      "selected": 1,
+      "award": "",
+      "links": {
+        "code": "https://github.com/rao-samarth/myshell"
+      }
+    },
+    {
+      "title": "C-Shark",
+      "authors": [
+        "A terminal based packet sniffer, implemented in C."
+      ],
+      "venue": "",
+      "thumbnail": "images/thumbs/1.jpg",
+      "selected": 1,
+      "award": "",
+      "links": {
+        "code": "https://github.com/rao-samarth/shark "
+      }
+    },
+    {
+      "title": "Minimal ZSH",
+      "authors": [
+        "Minimal zsh setup with autosuggestions, syntax highlighting, history tweaks, git branch display, and python virtualenv detection."
+      ],
+      "venue": "",
+      "thumbnail": "images/thumbs/2.jpg",
+      "selected": 1,
+      "award": "",
+      "links": {
+        "code": "https://github.com/rao-samarth/minimal-zsh"
+      }
+    }
+  ]
+}
