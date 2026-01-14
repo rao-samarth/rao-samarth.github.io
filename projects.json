@@ -15,7 +15,7 @@
     {
       "title": "Memetic Knapsack",
       "authors": [
-        "We propose a new memetic algorithm to the 0/1-Knapsack Problem."
+        "We propose a new memetic algorithm for the 0/1 Knapsack problem that integrates Lagrangian Relaxation for variable fixing, Deterministic Crowding with Island Model for diversity, and Simulated Annealing local search. We evaluate it against a standard Genetic Algorithm baseline."
       ],
       "venue": "",
       "thumbnail": "images/thumbs/knapsack.png",
